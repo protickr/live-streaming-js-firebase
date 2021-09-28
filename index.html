@@ -7,9 +7,26 @@
     <title>Live Streaming with vanilla JavaScript and Firebase</title>
 </head>
 <body>
-    
-    <script type="text/JavaScript" defer>
 
+  <script type="module">
+
+      import { initializeApp} from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
+      import { getFirestore } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-firestore.js";
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDnwAWUeBdpVS3lZGM9_0z7MesHKyY-T3w",
+        authDomain: "dollabills-c6365.firebaseapp.com",
+        projectId: "dollabills-c6365",
+        storageBucket: "dollabills-c6365.appspot.com",
+        messagingSenderId: "692927096796",
+        appId: "1:692927096796:web:2a518f002f36e43922d119"
+      };
+    
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+      console.log(db);
+      
     </script>
+
 </body>
 </html>
